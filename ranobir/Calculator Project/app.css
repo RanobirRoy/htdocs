@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.calculator {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+}

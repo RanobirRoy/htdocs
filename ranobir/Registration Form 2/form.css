@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: min(20rem, 100% - 1rem);
+  margin-inline: auto;
+  gap: 1rem;
+}
+input {
+  padding: 0.5rem;
+}

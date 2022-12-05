@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+:root {
+  --clr-skyblue: skyblue;
+  --clr-skyblue-deep: rgb(0, 183, 255);
+  --clr-white: white;
+  --clr-black: black;
+  --clr-red: red;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Ubuntu;
+  background-color: var(--clr-skyblue);
+}
+.form-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.form-container .form-wraper {
+  width: min(40rem, 100% - 1rem);
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--clr-white);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.form-container .form-wraper h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.form-container .form-wraper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-container .form-wraper form .input-wraper {
+  display: flex;
+  gap: 1rem;
+}
+.form-container .form-wraper form .input-wraper > * {
+  flex: 1;
+}
+.form-container .form-wraper form .input-wraper .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-container .form-wraper form .input-wraper .input-box label {
+  color: var(--clr-red);
+}
+.form-container .form-wraper form .input-wraper .input-box input {
+  padding: 0.5rem;
+  border: 2px solid var(--clr-skyblue);
+  outline: none;
+}
+.form-container .form-wraper form .input-wraper .input-box input:focus {
+  border: 2px solid var(--clr-skyblue-deep);
+}
+.btn {
+  padding: 0.5rem;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: var(--clr-black);
+  cursor: pointer;
+  background-color: var(--clr-skyblue);
+  outline: none;
+  border: none;
+}
+.btn:hover {
+  background-color: var(--clr-skyblue-deep);
+}
+@media (max-width: 500px) {
+  .form-container .form-wraper form .input-wraper {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  font-family: Ubuntu;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-inline: auto;
+  gap: 0.5rem;
+}
+form label {
+  color: red;
+}
+form input {
+  padding: 0.5rem;
+  outline: none;
+  border: 2px solid #c4c2c2;
+  border-radius: 5px;
+}
+form input:focus {
+  border: 2px solid #ff42e3;
+}
+.btn {
+  background-color: skyblue;
+  color: red;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid red;
+}
